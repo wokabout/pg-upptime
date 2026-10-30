@@ -1,31 +1,258 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: wokabout # Your GitHub organization or username, where this repository lives
+repo: pg-upptime # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  # ==================================================
+  # PNG - COUNTRY CODE AUTHORITATIVE DNS
+  # ==================================================
+  - name: PNG-DNS-UOT
+    check: "tcp-ping"
+    url: 202.1.32.125
+    port: 53
+    type: globalping
+    location: auckland
+
+  - name: PNG-DNS-Gransy1
+    check: "tcp-ping"
+    url: 185.28.194.194
+    port: 53
+    type: globalping
+    location: auckland
+
+  - name: PNG-DNS-Gransy2
+    check: "tcp-ping"
+    url: 185.38.108.108
+    port: 53
+    type: globalping
+    location: auckland
+
+  - name: PNG-DNS-PCH
+    check: "tcp-ping"
+    url: 204.61.216.152
+    port: 53
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - GOVERNMENT AND PUBLIC SERVICES
+  # ==================================================
+  - name: PNG-Government-Info
+    url: https://info.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-PMNEC
+    url: https://pmnec.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Finance
+    url: https://www.finance.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-IRC
+    url: https://irc.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Justice-AG
+    url: https://www.justice.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Health
+    url: https://www.health.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-MET
+    url: https://www.pngmet.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-NDC
+    url: https://www.pngndc.gov.pg/
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - GOVERNMENT DIGITAL INFRASTRUCTURE
+  # ==================================================
+  - name: PNG-DICT-GovCloud
+    url: https://www.ict.gov.pg/government-cloud-platform-2/
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - BANKING AND FINANCIAL SERVICES
+  # ==================================================
+  - name: PNG-BPNG
+    url: https://www.bankpng.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-BSP
+    url: https://www.bsp.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-BSP-OnlineBanking
+    url: https://www.bsp.com.pg/personal-banking/ways-to-bank/online-banking/
+    type: globalping
+    location: auckland
+
+  - name: PNG-KinaBank
+    url: https://www.kinabank.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Kina-Personal-DigiBank
+    url: https://personal.kinabank.com.pg/drb/#/drb/login
+    type: globalping
+    location: auckland
+
+  - name: PNG-Kina-PrivateBanking
+    url: https://digital.kinabank.com.pg/privatebanking/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Kina-Payments
+    url: https://payments.kinabank.com.pg/Account/Login.aspx
+    type: globalping
+    location: auckland
+
+  - name: PNG-Kina-Corporate-User
+    url: https://corporate.kinabank.com.pg/CorpUser/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Kina-Corporate-Admin
+    url: https://corporate.kinabank.com.pg/CorpAdmin/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Kina-PEI-Beta
+    url: https://www.peibeta.com/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Kina-DigiBankR
+    url: https://digibankr.kinabank.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Westpac
+    url: https://www.westpac.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Westpac-OnlineBanking
+    url: https://www.westpac.com.pg/personal/services/online-banking/
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - SUPERANNUATION AND MEMBER PORTALS
+  # ==================================================
+  - name: PNG-NASFUND
+    url: https://www.nasfund.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-NASFUND-eBranch
+    url: https://www.nasfund.com.pg/services/e-branch
+    type: globalping
+    location: auckland
+
+  - name: PNG-NambawanSuper
+    url: https://www.nambawansuper.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-NambawanSuper-Members
+    url: https://www.nambawansuper.com.pg/members/avoid-the-line-get-online
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - CUSTOMS AND TRADE
+  # ==================================================
+  - name: PNG-Customs
+    url: https://www.customs.gov.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Customs-ASYCUDA
+    url: https://www.customs.gov.pg/trade/asycuda
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - ELECTRICITY AND UTILITIES
+  # ==================================================
+  - name: PNG-Power
+    url: https://www.pngpower.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Power-NetworkMap
+    url: https://www.pngpower.com.pg/network-map
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - TELECOMMUNICATIONS
+  # ==================================================
+  - name: PNG-Telikom
+    url: https://www.telikom.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Digicel
+    url: https://www.digicelpacific.com/mobile/pg
+    type: globalping
+    location: auckland
+
+  - name: PNG-Digicel-CellMoni
+    url: https://www.digicelpacific.com/cellmoni/pg
+    type: globalping
+    location: auckland
+
+  - name: PNG-Vodafone
+    url: https://vodafone.com.pg/
+    type: globalping
+    location: auckland
+
+  # ==================================================
+  # PNG - TRANSPORT AND AVIATION
+  # ==================================================
+  - name: PNG-NAC
+    url: https://nac.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-AirNiugini
+    url: https://www.airniugini.com.pg/
+    type: globalping
+    location: auckland
+
+  - name: PNG-Ports
+    url: https://www.pngports.com.pg/
+    type: globalping
+    location: auckland
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+
+  baseUrl: /pg-upptime
+  # logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  name: PNG Upptime
+  introTitle: "**PNG-Upptime** is the uptime monitor and status page."
+  introMessage: This monitors critical services in PNG.
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+      href: https://github.com
