@@ -137,11 +137,6 @@ sites:
     type: globalping
     location: auckland
 
-  - name: PNG-Kina-DigiBankR
-    url: https://digibankr.kinabank.com.pg/
-    type: globalping
-    location: auckland
-
   - name: PNG-Westpac
     url: https://www.westpac.com.pg/
     type: globalping
